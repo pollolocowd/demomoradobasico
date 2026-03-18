@@ -13,12 +13,13 @@
 /* VARIABLES DE COLOR */
 
 :root{
---color1:#a855f7;   /* morado fuerte */
---color2:#c084fc;   /* morado medio */
---color3:#e9d5ff;   /* morado claro */
---glass: rgba(168, 85, 247, 0.08); /* glass morado */
---shadow:rgba(0,0,0,.4);
+--color1:#7b2cbf;   /* morado fuerte */
+--color2:#9d4edd;   /* morado medio */
+--color3:#b693ff;   /* morado claro */
+--glass: rgba(123, 44, 191, 0.08); /* glass morado */
+--shadow: rgba(0,0,0,.4);
 }
+
 
 *{
 margin:0;
@@ -249,14 +250,8 @@ left:21px;
 top:0;
 bottom:0;
 width:3px;
-
-background:linear-gradient(
-to bottom,
-var(--color2),
-var(--color1)
-);
-
-box-shadow:0 0 15px var(--color3);
+background:linear-gradient(to bottom, var(--color2), var(--color1));
+box-shadow:0 0 20px var(--color3);
 }
 
 .timeline-item{
@@ -264,7 +259,6 @@ display:flex;
 align-items:center;
 gap:20px;
 margin:45px 0;
-
 opacity:0;
 transform:translateY(40px);
 transition:all .6s ease;
@@ -274,27 +268,14 @@ transition:all .6s ease;
 width:50px;
 height:50px;
 border-radius:50%;
-
 display:flex;
 align-items:center;
 justify-content:center;
-
 font-size:22px;
-
-background:linear-gradient(
-135deg,
-var(--color2),
-var(--color1)
-);
-
+background:linear-gradient(135deg, var(--color2), var(--color1));
 border:1px solid rgba(255,255,255,.4);
-
-box-shadow:
-0 8px 20px var(--shadow),
-0 0 10px var(--color3);
-
+box-shadow:0 8px 20px var(--shadow), 0 0 15px var(--color3);
 color:white;
-
 transition:.4s;
 }
 
@@ -319,13 +300,8 @@ transform:translateY(0);
 }
 
 .timeline-item.active .circle{
-
 filter:brightness(1.4) saturate(1.3);
-
-box-shadow:
-0 0 25px var(--color2),
-0 0 50px var(--color1);
-
+box-shadow:0 0 30px var(--color2), 0 0 50px var(--color1);
 transform:scale(1.25);
 }
 
